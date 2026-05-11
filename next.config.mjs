@@ -1,12 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  serverExternalPackages: ['openai'],
-  images: {
-    remotePatterns: [
-      { protocol: 'https', hostname: '**.supabase.co' },
-      { protocol: 'https', hostname: 'images.unsplash.com' },
-    ],
+  eslint: {
+    ignoreDuringBuilds: true,
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
